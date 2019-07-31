@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root 'application#hello' # Application controller -> Hello method 
+  resources :budgets
+  resources :users
+  root 'users#index' # users controller -> index method 
 end
